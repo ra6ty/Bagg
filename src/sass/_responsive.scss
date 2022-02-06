@@ -1,14 +1,6 @@
 .container {
   max-width: 1400px;
 }
-
-/**
-  Десктоп маленький
- */
-
-@media screen and (max-width: 1429px) {
-}
-
 /**
   Планшет горизонтальный
  */
@@ -48,70 +40,56 @@
       margin-top: 1rem;
     }
   }
-  .head_page {
-  }
-}
-
-/**
-  Планшет вертикальный
- */
-
-@media screen and (max-width: 1023px) {
-}
-
-/**
-  Мобильные устройства
- */
-
-@media screen and (max-width: 767px) {
-  .main_about--right {
-    margin: 5% 0;
-  }
-  a {
-    width: 80%;
-  }
-  section {
-    align-items: center;
-  }
-  .head_page h2 {
-    font-size: 30px;
-  }
-  .main_certificate h2 {
-    font-size: 20px;
-  }
-  .main_case--container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .main_case--containe-left {
-    margin-bottom: 1rem;
-  }
-  .main_clients h2 {
-    font-size: 20px;
-  }
-  .main_about4 h3 {
-    font-size: 28px;
-  }
-  .main_about3 h2 {
-    font-size: 28px;
-  }
-  .main_about2 h2 {
-    font-size: 28px;
-  }
-  .main_about h2 {
-    font-size: 28px;
-  }
-  .footer .footer--container3-img {
-    margin: 1rem auto;
-  }
-  .head_page--white_button {
-    font-size: 12px;
-  }
-  .main_clients--container img {
-    margin: 1rem auto !important;
-  }
-  .main_about4--container2 div div img {
-    margin-left: 1rem;
+  @media screen and (max-width: 767px) {
+    .main_about--right {
+      margin: 5% 0;
+    }
+    a {
+      width: 80%;
+    }
+    section {
+      align-items: center;
+    }
+    .head_page h2 {
+      font-size: 30px;
+    }
+    .main_certificate h2 {
+      font-size: 20px;
+    }
+    .main_case--container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .main_case--containe-left {
+      margin-bottom: 1rem;
+    }
+    .main_clients h2 {
+      font-size: 20px;
+    }
+    .main_about4 h3 {
+      font-size: 28px;
+    }
+    .main_about3 h2 {
+      font-size: 28px;
+    }
+    .main_about2 h2 {
+      font-size: 28px;
+    }
+    .main_about h2 {
+      font-size: 28px;
+    }
+    .footer .footer--container3-img {
+      margin: 1rem auto;
+    }
+    .head_page--white_button {
+      font-size: 12px;
+    }
+    .main_clients--container img {
+      margin: 1rem auto !important;
+    }
+    .main_about4--container2 div div img {
+      margin-left: 1rem;
+    }
   }
 }
