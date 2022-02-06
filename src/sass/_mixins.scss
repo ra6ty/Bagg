@@ -1,10 +1,8 @@
 // =============================================================================
 // String Replace
 // =============================================================================
-
 @function str-replace($string, $search, $replace: '') {
   $index: str-index($string, $search);
-
   @if $index {
     @return str-slice($string, 1, $index - 1) + $replace +
       str-replace(
@@ -13,14 +11,12 @@
         $replace
       );
   }
-
   @return $string;
 }
 
 // =============================================================================
 // Font Face
 // =============================================================================
-
 @mixin font-face(
   $name,
   $path,
@@ -29,17 +25,14 @@
   $exts: eot woff ttf svg
 ) {
   $src: null;
-
   $extmods: (
     eot: '?',
     svg: '#' + str-replace($name, ' ', '_'),
   );
-
   $formats: (
     otf: 'opentype',
     ttf: 'truetype',
   );
-
   @each $ext in $exts {
     $extmod: if(
       map-has-key($extmods, $ext),
@@ -53,7 +46,6 @@
       comma
     );
   }
-
   @font-face {
     font-family: quote($name);
     font-style: $style;
@@ -73,4 +65,59 @@
   } @else {
     font-family: 'object-fit: #{$fit}';
   }
+}
+
+@mixin red-button {
+  margin-top: 2rem;
+  display: block;
+  padding: 1rem;
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: bold;
+  background: #dd0c18;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+  max-width: 300px;
+  &:hover {
+    text-decoration: none;
+    background: #f5414b;
+    color: #ffffff;
+  }
+  @media screen and (max-width: 767px) {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@mixin white-button {
+  color: #fff;
+  border: 1px solid #fff;
+  max-width: 300px;
+  padding: 1rem;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  line-height: 120%;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  &:hover {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+  }
+  @media screen and (max-width: 767px) {
+    max-width: 90%;
+    margin: 1.4rem auto;
+  }
+}
+
+@mixin smallRedText {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  color: #dc0c1c !important;
 }
