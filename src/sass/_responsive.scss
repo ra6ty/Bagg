@@ -2,6 +2,37 @@
   max-width: 1400px;
 }
 
+@media screen and (max-width: 1342px) {
+  .modal-content form .row {
+    flex-direction: column !important;
+    & .col {
+      & input {
+        max-width: 100% !important;
+      }
+      & textarea {
+        max-width: 100% !important;
+      }
+      & select {
+        max-width: 100% !important;
+      }
+    }
+  }
+  .modal-content--container2 p {
+    margin: 1rem 0 0 1rem;
+    max-width: 300px;
+    text-align: center;
+  }
+  .modal-content--container2 label {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+  .modal-content--container h2 {
+    margin: 2rem 0;
+    font-size: 19px;
+  }
+}
+
 @media screen and (max-width: 1279px) {
   .head_page--container {
     display: none;
@@ -35,6 +66,38 @@
     & .line {
       border-top: 2px solid #ffffff;
       margin-top: 1rem;
+    }
+  }
+  .main_about--right {
+    margin: 0;
+  }
+  .main_about--left h2 {
+    margin-top: 2rem;
+  }
+  .main_about {
+    margin-bottom: 0;
+  }
+  .main_case--container2 {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .main_case h3 {
+    margin: 1rem auto;
+  }
+  .main_case--container {
+    justify-content: center;
+  }
+  .main_case h2 {
+    max-width: fit-content;
+    margin-bottom: 2rem;
+  }
+  @media screen and (max-width: 930px) {
+    .main_case ol li {
+      font-size: 12px;
+    }
+    .main_case p {
+      font-size: 12px;
     }
   }
   @media screen and (max-width: 767px) {
@@ -87,6 +150,16 @@
     }
     .main_about4--container2 div div img {
       margin-left: 1rem;
+    }
+    .footer--container {
+      flex-direction: column;
+      max-width: 60%;
+    }
+    .footer--end {
+      flex-direction: column;
+    }
+    .modal-content--container3 label {
+      font-size: 10px;
     }
   }
 }
