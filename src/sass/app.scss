@@ -2,7 +2,6 @@
 @import '_variables';
 @import '_desktop.scss';
 body {
-  max-width: 1600px;
   margin: 0 auto !important;
 }
 
@@ -902,6 +901,11 @@ section {
   }
 }
 
+.form-check-input:active {
+  background-color: #50575f !important;
+  border: none;
+}
+
 .modal-content .row .col input:focus {
   outline: none;
   border: 3px solid #50575f;
@@ -916,7 +920,7 @@ section {
   font-size: 28px;
   font-weight: bold;
   position: absolute;
-  right: 1%;
+  right: 3%;
   top: 5%;
 }
 
@@ -925,6 +929,14 @@ section {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+[data-component='slideshow'] .slide {
+  display: none;
+}
+
+[data-component='slideshow'] .slide.active {
+  display: block;
 }
 
 @import '_responsive';

@@ -28,8 +28,11 @@
     margin-top: 1rem;
   }
   .modal-content--container h2 {
-    margin: 2rem 0;
+    margin-bottom: 2rem;
     font-size: 19px;
+  }
+  .footer--end {
+    align-items: baseline !important;
   }
 }
 
@@ -92,12 +95,19 @@
     max-width: fit-content;
     margin-bottom: 2rem;
   }
+  .close {
+    right: 4%;
+    top: 0.5%;
+  }
   @media screen and (max-width: 930px) {
     .main_case ol li {
       font-size: 12px;
     }
     .main_case p {
       font-size: 12px;
+    }
+    .main_about--right-thekondText {
+      margin-top: 1rem;
     }
   }
   @media screen and (max-width: 767px) {
